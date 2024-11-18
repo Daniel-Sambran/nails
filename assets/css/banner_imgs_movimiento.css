@@ -1,0 +1,41 @@
+#banner {
+  display: flex;
+  overflow: hidden;
+  height: 50vw;
+  background: #111;
+}
+
+#banner:hover img {
+  opacity: 0.5;
+}
+
+#banner img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 1px solid black;
+  box-sizing: border-box;
+  transition: opacity 0.2s;
+}
+
+#banner img:hover {
+  opacity: 1;
+}
+
+#banner .column-banner {
+  animation: var(--animation, none) 16s infinite linear;
+}
+
+#banner .column-banner:hover {
+  animation-play-state: paused;
+}
+
+#banner .column-banner:nth-of-type(odd) {
+  align-self: flex-end;
+  --direction: 50%;
+}
+
+@keyframes slide {
+  to {
+    transform: translateY(var(--direction, -50%));
+  }
+}

@@ -1,0 +1,65 @@
+/* parralax */
+.parallax-wrap {
+  top: calc(3rem + 13vh);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax-wrap h2 {
+  position: relative;
+  font-size: 100px;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+.parallax-wrap span {
+  position: absolute;
+
+  /* border-radius: 50%; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50rem !important;
+  width: 50rem;
+}
+@media (min-width: 1600px) {
+  .parallax-wrap span {
+    height: 60rem !important;
+    width: 60rem;
+  }
+}
+.parallax-wrap span:nth-child(1) {
+  top: -1rem;
+  left: 50%;
+  background-image: url(../img/layer01.png);
+  z-index: 3;
+}
+.parallax-wrap span:nth-child(2) {
+  top: 7%;
+  left: 50%;
+  background-image: url(../img/layer02.png);
+  z-index: 3;
+}
+.parallax-wrap span:nth-child(3) {
+  top: 7%;
+  left: 50%;
+  background-image: url(../img/layer03.png);
+  z-index: 3;
+}
+.parallax-wrap span:nth-child(4) {
+  top: 7%;
+  left: 50%;
+  background-image: url(../img/layer04.png);
+  z-index: 3;
+}
+.parallax-wrap span:nth-child(5) {
+  top: 7%;
+  left: 50%;
+  background-image: url(../img/layer05.png);
+  z-index: 3;
+}
+
+/* end parlaxx */
